@@ -112,7 +112,7 @@ li {
   align-items: center;
   justify-content: center;
   height: 86vh;
-  background-image: url(img/placeholder4x3.png);
+  background-image: url();
   background-size: cover;
   background-repeat: no-repeat;
 }
