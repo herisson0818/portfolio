@@ -60,6 +60,7 @@ li {
 /*--------------------------------
  文字
 ---------------------------------*/
+
 .heading-primary {
   font-family: "Open sans", sans-serif;
   font-size: 40px;
@@ -107,6 +108,11 @@ li {
 /*--------------------------------
 ヘッダー
 ---------------------------------*/
+.GoalTimer{
+  text-align: right;
+  margin-right: 30px;
+}
+
 .header {
   display: flex;
   align-items: center;
