@@ -350,6 +350,7 @@
               <input type="radio" name="frequency">満足しなかった<br>
               <input type="submit" name="送信する" id="submit"><br>
             </form>
+            <button id="remove">クッキー削除</button>
           </div>
           <!--<div class="section-body others">
             <ul class="others-list">
@@ -457,6 +458,9 @@
 	   } else {
 		   Cookies.set('answered', 'yes', {expires: 7});
 　　　}
+  };
+  document.getElementById('remove').onclick = function() {
+	Cookies.remove('answered');
   };
 </script>
 </body>
