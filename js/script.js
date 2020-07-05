@@ -78,3 +78,7 @@ var refresh = function() {
 	setTimeout(recalc, 1000);
 }
 recalc();
+
+document.getElementById('form').select.onchange = function() {
+  location.href = document.getElementById('form').select.value;
+}
