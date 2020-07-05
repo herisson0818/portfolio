@@ -448,5 +448,16 @@
   <script type='text/javascript' src="js/photoswipe/photoswipe-setup.js"></script>
   <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
+  <script src="/path/to/js.cookie.js"></script>
+  <script>
+  document.getElementById('form').onsubmit = function(){
+	   if (Cookies.get('answered') === 'yes') {
+		   window.alert('回答ずみです。アンケートの回答は1回しか出来ません。');
+		   return false;
+	   } else {
+		   Cookies.set('answered', 'yes', {expires: 7});
+　　　}
+  };
+</script>
 </body>
 </html>
