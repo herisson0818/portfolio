@@ -113,9 +113,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 86vh;
+  height: 100vh;
   background-image: url("../img/about/160.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
