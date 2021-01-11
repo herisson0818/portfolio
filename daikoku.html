@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 4%;
+  text-align:center;
+  /*border-bottom:thin solid;*/
+}
+
+a,p{
+  font-size:24px;
+  text-decoration: none;
+}
+
+
+h2{
+  font-size:40px;
+  text-align:center;
+}
+
+ul.main-nav{
+  list-style: none;
+}
+
+li{
+  margin-left:25px;
+  font-size:20px
+}
+
+body{
+  margin:40px;
+  background-color:#dddddd;
+  font-family:"游明朝",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro","ＭＳ 明朝",serif;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+}
+
+ul.main-nav{
+  display:flex;
+  padding-top:80px
+}
+
+.image-content img {
+  width:100%;
+  margin:30px 0px;
+}
+
+.about-content{
+  height:270px;
+  text-align:center;
+  /*color:white;
+  background-color:black;*/
+}
+
+.gallery-content{
+  height:420px;
+
+}
+
+.shopping-content{
+  height:200px;
+}
+
+
+.contact-content{
+  height:450px;
+}
+
+.contact-address{
+  display: flex;
+}
+
+.contact-desc{
+  margin-left:30px;
+}
+</style>
+</head>
+<body>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>大塔駅のダイコクちゃん</title>
+    <meta name="descriptiion" content="ダイコクちゃんのお部屋">
+  </head>
+  
+  <body>
+    <header class="page-header wrapper">
+      <div class="header-logo">
+        <img src="https://drive.google.com/uc?id=11xMP7KlO2YJ3PV8EVaykgCdgCLxedsq4" width="150" height="120" alt="Daikoku-logo"><a><b>
+        ダイコクちゃん</b></a>
+      </div>
+      <div class="nav">
+        <ul class="main-nav">
+          <li><a href="#about-content">ABOUT</a></li>
+          <li><a href="#gallery-content">GALLERY</a></li>
+          <li><a href="#shopping-content">SHOPPING</a></li>
+          <li><a href="#contact-content">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <div class="image-content wrapper">
+      <section>
+        <img src="https://drive.google.com/uc?id=1nmme87RbFAYRamPMINuv7BSofx45PdN-" name="daikoku" class="image-vw">
+      </section>
+    </div>
+    
+    <div class="about-content wrapper" id="about-content">   
+      <h2>ABOUT</h2>
+      <p>２０１９年の秋頃から佐世保市の大塔駅に住み着いた黒猫ちゃんです。</p>
+      <p>お昼寝したり、駅のベンチに寝っ転がったり</p>
+      <p>自由気ままに暮らしています。</p>
+    </div>
+    
+    <div class="gallery-content wrapper" id="gallery-content">   
+      <h2>GALLERY</h2>
+      <!-- SnapWidget -->
+      <iframe src="https://snapwidget.com/embed/856173" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:495px; height:330px"></iframe>
+    </div>
+
+    <div class="shopping-content wrapper" id="shopping-content">
+    <h2>SHOPPING</h2>
+      <p><a href="https://store.line.me/stickershop/author/1710363">LINEスタンプ</a>作りました</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://store.line.me/stickershop/author/1710363/ja" data-iframely-url="//cdn.iframe.ly/2gBS6Qm"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+    </div>
+    
+    
+    <div class="contact-content wrapper" id="contact-content">   
+      <h2>CONTACT</h2>
+      <div class="contact-address">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.4745162558684!2d129.779898714725!3d33.14916727222459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356a971b368d84a1%3A0xc52e459aa81ac18f!2z5aSn5aGU6aeF!5e0!3m2!1sja!2sjp!4v1596062534545!5m2!1sja!2sjp" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="contact-desc">
+        <a>〒857-1161<br>
+           長崎県佐世保市大塔町<br>（JR大塔駅）
+        </a>
+      </div>
+      </div>
+  </div>
+  </body>  
+</html>
+
+<script>
+//<script type="text/javascript">
+img = new Array("https://drive.google.com/uc?id=1nrnyyzkwp90UYNYLG-AB8NwUUQNfFmif","https://drive.google.com/uc?id=1nmme87RbFAYRamPMINuv7BSofx45PdN-"); //*1
+count = -1; //*2
+imgTimer();
+
+function imgTimer() {
+	//画像番号
+	count++; //*3
+	//画像の枚数確認
+	if (count == img.length) count = 0; //*4
+	//画像出力
+	document.daikoku.src = img[count]; //*5
+	//次のタイマー呼びだし
+	setTimeout("imgTimer()",5000); //*6
+}
+//</script>
+//# sourceURL=userscript.js
+</script>
+</body>
+</html>
